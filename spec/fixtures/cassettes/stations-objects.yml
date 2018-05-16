@@ -23,7 +23,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Wed, 16 May 2018 16:10:55 GMT
+      - Wed, 16 May 2018 16:40:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -37,7 +37,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '992'
+      - '966'
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
@@ -47,7 +47,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Last-Modified:
-      - Wed, 16 May 2018 16:10:55 GMT
+      - Wed, 16 May 2018 16:40:47 GMT
       Strict-Transport-Security:
       - max-age=31536000; preload
       - max-age=31536000; preload
@@ -56,9 +56,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 5a824f46-7c39-47fe-b5d7-1692ef4461c1
+      - '0987023b-252a-443c-a854-c666ee5865aa'
       X-Runtime:
-      - '0.014384'
+      - '0.011455'
       X-Xss-Protection:
       - 1; mode=block
       Age:
@@ -114,7 +114,7 @@ http_interactions:
         Elati St","zip":"80204","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
         Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_is_retail":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:413611"]},"distance":0.76279,"distance_km":1.22759}]}'
     http_version: 
-  recorded_at: Wed, 16 May 2018 16:10:55 GMT
+  recorded_at: Wed, 16 May 2018 16:40:47 GMT
 - request:
     method: get
     uri: https://developer.nrel.gov/api/alt-fuel-stations/v1/nearest.json?fuel_type=ELEC,LPG&limit=10&location=80203&radius=6
@@ -138,7 +138,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Wed, 16 May 2018 16:10:55 GMT
+      - Wed, 16 May 2018 16:40:47 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -152,7 +152,7 @@ http_interactions:
       X-Ratelimit-Limit:
       - '1000'
       X-Ratelimit-Remaining:
-      - '991'
+      - '965'
       Access-Control-Allow-Methods:
       - GET, POST, OPTIONS
       Access-Control-Allow-Origin:
@@ -162,7 +162,7 @@ http_interactions:
       Cache-Control:
       - max-age=0, private, must-revalidate
       Last-Modified:
-      - Wed, 16 May 2018 16:10:55 GMT
+      - Wed, 16 May 2018 16:40:47 GMT
       Strict-Transport-Security:
       - max-age=31536000; preload
       - max-age=31536000; preload
@@ -171,9 +171,9 @@ http_interactions:
       X-Frame-Options:
       - DENY
       X-Request-Id:
-      - 22434a60-95bb-4bf3-935a-e2dfbd31b290
+      - c9fd46d8-5cb5-4bec-ae90-73d7514bb93a
       X-Runtime:
-      - '0.011063'
+      - '0.017541'
       X-Xss-Protection:
       - 1; mode=block
       Age:
@@ -229,5 +229,5 @@ http_interactions:
         Elati St","zip":"80204","country":"US","bd_blends":null,"e85_blender_pump":null,"ev_connector_types":["J1772"],"ev_dc_fast_num":null,"ev_level1_evse_num":null,"ev_level2_evse_num":2,"ev_network":"ChargePoint
         Network","ev_network_web":"http://www.chargepoint.com/","ev_other_evse":null,"hy_is_retail":null,"hy_status_link":null,"lpg_primary":null,"ng_fill_type_code":null,"ng_psi":null,"ng_vehicle_class":null,"ev_network_ids":{"posts":["1:413611"]},"distance":0.76279,"distance_km":1.22759}]}'
     http_version: 
-  recorded_at: Wed, 16 May 2018 16:10:55 GMT
+  recorded_at: Wed, 16 May 2018 16:40:48 GMT
 recorded_with: VCR 4.0.0
