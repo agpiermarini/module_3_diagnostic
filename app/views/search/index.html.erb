@@ -1,8 +1,8 @@
 <h3>10 Closest Electric and Propane Stations within 6 miles of 80203<h3>
 <% @stations.each_with_index do | station, index | %>
-  <h4 class="station#{index+1}"><%= station.name %></h4>
-  <h5 class="address#{index+1}"><%= station.address %></h5>
-  <h5 class="fuel-type#{index+1}"><%= station.fuel-type %></h5>
-  <h5 class="distance#{index+1}"><%= station.distance %></h5>
-  <h5 class="access_times#{index+1}"><%= station.access_times %></h5>
+  <h4 class="name<%= index + 1 %>"><%= station.name %></h4>
+  <h5 class="address<%= index + 1 %>"><%= station.address %></h5>
+  <h5 class="fuel-type<%= index + 1 %>"><%= station.fuel_type %></h5>
+  <h5 class="distance<%= index + 1 %>"><%= station.distance %></h5>
+  <h5 class="access-times<%= index + 1 %>"><%= station.access_times %></h5>
 <% end %>

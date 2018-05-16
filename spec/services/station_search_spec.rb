@@ -1,18 +1,16 @@
 require 'rails_helper'
 
-describe StationSearch do
+describe 'StationSearch' do
   subject { StationSearch.new("80203", ENV["nrel_api_key"]) }
-  context 'initialize' do
-    it 'exists with attributes' do
-      expect(subject).to be_a StationSearch
-    end
+  it 'initializes with proper attributes' do
+    expect(subject).to be_a StationSearch
   end
 
-  context 'instance methods' do
-    skip '#stations' do
-      VCR.use_cassette('service-search') do
+  describe 'instance methods' do
+    it '#stations' do
+      VCR.use_cassette('stations-objects') do
         expect(subject.stations).to be_an Array
-        expect(subject.repos.first).to be_a Station
+        expect(subject.stations.first).to be_a Station
       end
     end
   end

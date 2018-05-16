@@ -3,6 +3,7 @@ require 'rails_helper'
 feature 'User can visit root path' do
   context 'and search for fuel stations by zip code' do
     scenario 'and be directed to a page where they see the fuel stations at that zip code' do
+      VCR.use_cassette("station-search-endpoint1") do
       #as a user, visit root path
       visit "/"
       # And I fill in the search form with 80203 (Note: Use the existing search form)
@@ -11,10 +12,11 @@ feature 'User can visit root path' do
       click_on "Locate"
       # Then I should be on page "/search"
       expect(current_path).to eq(search_path)
+      end
     end
 
     scenario 'and should see stations meeting certain criteria' do
-      VCR.use_cassette("station-search-endpoint") do
+      VCR.use_cassette("station-search-endpoint2") do
         visit "/"
         fill_in :q, with: "80203"
         click_on "Locate"
