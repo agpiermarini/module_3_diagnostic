@@ -1,8 +1,8 @@
-<h3>10 Closest Electric and Propane Stations within 6 miles of 80203<h3>
+<h3>10 Closest Electric and Propane Stations<h3>
 <% @stations.each_with_index do | station, index | %>
-  <h4 class="name<%= index + 1 %>"><%= station.name %></h4>
-  <h5 class="address<%= index + 1 %>"><%= station.address %></h5>
-  <h5 class="fuel-type<%= index + 1 %>"><%= station.fuel_type %></h5>
-  <h5 class="distance<%= index + 1 %>"><%= station.distance %></h5>
-  <h5 class="access-times<%= index + 1 %>"><%= station.access_times %></h5>
+  <h5 class="name<%= index + 1 %>"> <%= index + 1 %>. <%= station.name %></h5>
+  <h5 class="address<%= index + 1 %>">Address: <%= station.address %>, <%= station.city %>, <%= station.state %>, <%= station.zip %></h5>
+  <h5 class="fuel-type<%= index + 1 %>">Fuel Type: <%= station.fuel_type %></h5>
+  <h5 class="distance<%= index + 1 %>">Distance: <%= station.distance %></h5>
+  <h5 class="access-times<%= index + 1 %>">Access Times: <%= station.access_times %></h5>
 <% end %>
