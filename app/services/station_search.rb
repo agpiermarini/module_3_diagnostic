@@ -11,7 +11,11 @@ class StationSearch
       req.headers["X-API-KEY"] = api_key
     end
 
-    require 'pry'; binding.pry
+    station_info = JSON.parse(response.body, symbolize_names: true)
+
+    station_info[:fuel_stations].map do | station_hash |
+      Station.new(station_hash)
+    end
   end
 
   private
